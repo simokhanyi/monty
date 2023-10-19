@@ -49,5 +49,6 @@ void pall(Stack *stack);
 void swap(Stack *stack);
 void execute(Stack *stack, char *opcode, int value);
 int main(int argc, char *argv[]);
+void add(Stack *stack);
 
 #endif

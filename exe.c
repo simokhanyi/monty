@@ -27,6 +27,9 @@ void execute(Stack *stack, char *opcode, int value)
 	} else if (strcmp(opcode, "swap") == 0)
 	{
 		swap(stack);
+	} else if (strcmp(opcode, "add") == 0)
+	{
+		add(stack);
 	} else
 	{
 		fprintf(stderr, "Error: Unknown opcode '%s'.\n", opcode);
