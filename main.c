@@ -41,12 +41,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	fclose(file);
-	while (stack.top != NULL)
-	{
-		Node *temp = stack.top;
-
-		stack.top = stack.top->next;
-		free(temp);
-	}
+	free_stack(&stack);
 	return (0);
 }

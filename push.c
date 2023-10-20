@@ -10,7 +10,7 @@
 
 void push(Stack *stack, int value)
 {
-	Node *new_node = (Node*)malloc(sizeof(Node));
+	Node *new_node = (Node *)malloc(sizeof(Node));
 
 	if (new_node == NULL)
 	{

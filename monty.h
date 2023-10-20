@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+#include <stddef.h>
 
 #define STACK_SIZE 1000
 
@@ -50,5 +51,6 @@ void swap(Stack *stack);
 void execute(Stack *stack, char *opcode, int value);
 int main(int argc, char *argv[]);
 void add(Stack *stack);
+void free_stack(Stack *stack);
 
 #endif

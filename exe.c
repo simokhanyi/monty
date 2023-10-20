@@ -30,7 +30,10 @@ void execute(Stack *stack, char *opcode, int value)
 	} else if (strcmp(opcode, "add") == 0)
 	{
 		add(stack);
-	} else
+	} else if (strcmp(opcode, "nop") == 0)
+	{
+	}
+	else
 	{
 		fprintf(stderr, "Error: Unknown opcode '%s'.\n", opcode);
 		exit(EXIT_FAILURE);
